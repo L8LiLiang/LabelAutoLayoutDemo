@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9B350681BFCCCA800F34B94 /* L8ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B350671BFCCCA800F34B94 /* L8ScrollView.m */; };
 		B9EEF9DF1BFB6E2E0065C14E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EEF9DE1BFB6E2E0065C14E /* main.m */; };
 		B9EEF9E21BFB6E2E0065C14E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EEF9E11BFB6E2E0065C14E /* AppDelegate.m */; };
 		B9EEF9E51BFB6E2E0065C14E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EEF9E41BFB6E2E0065C14E /* ViewController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9B350661BFCCCA800F34B94 /* L8ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8ScrollView.h; sourceTree = "<group>"; };
+		B9B350671BFCCCA800F34B94 /* L8ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L8ScrollView.m; sourceTree = "<group>"; };
 		B9EEF9DA1BFB6E2E0065C14E /* LabelLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabelLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EEF9DE1BFB6E2E0065C14E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9EEF9E01BFB6E2E0065C14E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				B9EEFA111BFB6E450065C14E /* LabelLayoutView.m */,
 				B9EEF9E31BFB6E2E0065C14E /* ViewController.h */,
 				B9EEF9E41BFB6E2E0065C14E /* ViewController.m */,
+				B9B350661BFCCCA800F34B94 /* L8ScrollView.h */,
+				B9B350671BFCCCA800F34B94 /* L8ScrollView.m */,
 				B9EEF9E61BFB6E2E0065C14E /* Main.storyboard */,
 				B9EEF9E91BFB6E2E0065C14E /* Assets.xcassets */,
 				B9EEF9EB1BFB6E2E0065C14E /* LaunchScreen.storyboard */,
@@ -352,6 +357,7 @@
 			files = (
 				B9EEFA311BFB7A0E0065C14E /* MASConstraintMaker.m in Sources */,
 				B9EEF9E51BFB6E2E0065C14E /* ViewController.m in Sources */,
+				B9B350681BFCCCA800F34B94 /* L8ScrollView.m in Sources */,
 				B9EEFA121BFB6E450065C14E /* LabelLayoutView.m in Sources */,
 				B9EEFA301BFB7A0E0065C14E /* MASConstraint.m in Sources */,
 				B9EEFA381BFB7A0E0065C14E /* ViewController+MASAdditions.m in Sources */,
@@ -589,6 +595,7 @@
 				B9EEFA091BFB6E2E0065C14E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EEFA0A1BFB6E2E0065C14E /* Build configuration list for PBXNativeTarget "LabelLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +604,7 @@
 				B9EEFA0C1BFB6E2E0065C14E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EEFA0D1BFB6E2E0065C14E /* Build configuration list for PBXNativeTarget "LabelLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +613,7 @@
 				B9EEFA0F1BFB6E2E0065C14E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

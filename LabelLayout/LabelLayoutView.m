@@ -9,7 +9,7 @@
 #import "LabelLayoutView.h"
 #import "Masonry.h"
 
-static UIEdgeInsets const padding = {20,8,8,8};
+static UIEdgeInsets const padding = {8,8,8,8};
 
 @interface LabelLayoutView ()
 
@@ -68,7 +68,7 @@ static UIEdgeInsets const padding = {20,8,8,8};
     
     UILabel *label3 = UILabel.new;
     label3.backgroundColor = [UIColor greenColor];
-    label3.text = @"aaaaaaaaaa";
+    label3.text = @"who are you?";
     label3.font = self.font;
     self.label3 = label3;
     [self addSubview:label3];
@@ -77,7 +77,7 @@ static UIEdgeInsets const padding = {20,8,8,8};
     label4.numberOfLines = 0;
     label4.backgroundColor = [UIColor yellowColor];
     label4.lineBreakMode = NSLineBreakByTruncatingTail;
-    label4.text = @"kkkkkkkkkkkkkkkkkkk";
+    label4.text = @"leon is me.";
     label4.font = self.font;
     self.label4 = label4;
     [self addSubview:label4];
@@ -102,7 +102,7 @@ static UIEdgeInsets const padding = {20,8,8,8};
     
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.mas_right).insets(padding);
-        make.centerY.equalTo(self.label2.mas_centerY);
+        make.centerY.equalTo(self.mas_centerY).priority(1000);
         make.width.equalTo(@80);
         make.height.equalTo(@80);
     }];
@@ -176,11 +176,16 @@ static UIEdgeInsets const padding = {20,8,8,8};
     frame.size.height = CGRectGetMaxY(self.label4.frame) + padding.bottom;
     self.frame = frame;
     
-    NSLog(@"%@",NSStringFromCGRect(self.btn.frame));
-    NSLog(@"%@",NSStringFromCGRect(self.label1.frame));
-    NSLog(@"%@",NSStringFromCGRect(self.label3.frame));
-    NSLog(@"%@",NSStringFromCGRect(self.label4.frame));
-
+    CGRect btnFrame = self.btn.frame;
+    CGFloat btnY = (self.frame.size.height - btnFrame.size.height) / 2.0;
+    btnFrame.origin.y = btnY;
+    self.btn.frame = btnFrame;
+    
+//    NSLog(@"%@",NSStringFromCGRect(self.btn.frame));
+//    NSLog(@"%@",NSStringFromCGRect(self.label1.frame));
+//    NSLog(@"%@",NSStringFromCGRect(self.label3.frame));
+//    NSLog(@"%@",NSStringFromCGRect(self.label4.frame));
+//    [super layoutSubviews];
 }
 
 //- (void)layoutSubviews {
